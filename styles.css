@@ -31,11 +31,59 @@ body {
   background: #ece8e5 0% 0% no-repeat padding-box;
   opacity: 1;
 }
+.header > div {
+  display: flex;
+  justify-content: space-between;
+}
 .header__name span:first-child {
   color: #ff6f4a;
 }
 .header__name span:not(:first-child) {
   color: #1b3849;
+}
+
+.header__name {
+  min-width: 320px;
+  align-items: center;
+  display: flex;
+  border-right: 1px solid;
+}
+
+.header__menu_desktop {
+  display: none !important;
+}
+.footer__logo img,
+.header__logo img {
+  height: 80px;
+}
+.footer__list,
+.footer__menu {
+  padding: 15px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    border-right: 1px solid #333;
+  }
+  .header__menu_mobile {
+    display: none !important;
+  }
+  .modal-dialog {
+    width: 690px !important;
+  }
+  .footer__list {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+  }
+  .footer__list-v-delimiter {
+    border-right: 1px solid;
+  }
+  .footer__list-v-delimiter .footer__menu {
+    padding-left: 92px;
+  }
+  .footer__list {
+    margin-top: 55px;
+  }
 }
 
 /* GENERAL */
@@ -54,7 +102,7 @@ a:hover {
 /* HEADER */
 .header {
   border-bottom: 1px solid #333;
-  background: #e1e4e8 !important;
+  /* background: #e1e4e8 !important; */
 }
 .header-sticky {
   position: fixed;
@@ -83,7 +131,7 @@ a:hover {
   font-size: 14px;
   min-height: 80px;
   line-height: 80px;
-  border-right: 1px solid #333;
+  /* border-right: 1px solid #333; */
   color: #333;
 }
 .header__button {
