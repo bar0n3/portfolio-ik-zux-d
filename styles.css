@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: #ece8e5 !important;
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.img-responsive {
+  width: 100%;
+  max-width: 100%;
+}
+
+.header__name {
+  text-align: left;
+  font: normal normal bold 18px/24px Roboto Mono;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.header {
+  background: #ece8e5 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.header__name span:first-child {
+  color: #ff6f4a;
+}
+.header__name span:not(:first-child) {
+  color: #1b3849;
+}
+
+/* GENERAL */
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none !important;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  border-bottom: 1px solid #333;
+  background: #e1e4e8 !important;
+}
+.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.header__menu {
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+.header__logo {
+  height: 80px;
+  width: 100%;
+  max-width: 330px;
+  min-width: 200px;
+}
+.header__menu li {
+  list-style: none;
+}
+.header__menu li a {
+  margin: 32px 0;
+  padding: 0 32px;
+  font-size: 14px;
+  min-height: 80px;
+  line-height: 80px;
+  border-right: 1px solid #333;
+  color: #333;
+}
+.header__button {
+  padding: 16px 32px !important;
+  margin: 32px 16px !important;
+  transition: 0.25 all;
+}
+
+/* MAIN - PROJECTS */
+h1.title-right {
+  text-align: right;
+  margin: 120px 0 70px;
+}
+.project__item {
+  margin-bottom: 70px;
+}
+.project__item .project__item-frame {
+  border: 10px solid;
+}
+.project__item .project__item-frame:hover {
+  text-align: right;
+  font: normal normal bold 65px/80px Roboto Mono;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-shadow: 6px 8px 0px #ff6f4a;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.project__item_black .project__item-frame {
+  border-color: #223747;
+}
+.project__item_orange .project__item-frame {
+  border-color: #ed7855;
+}
+
+.project__item-title {
+  margin: 29px 0 32px;
+  text-align: left;
+  font: normal normal 600 32px/80px Roboto Mono;
+  letter-spacing: 0px;
+  color: #1b3849;
+  opacity: 1;
+}
+
+.project__item-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.project__item-tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project__item-tags span {
+  margin: 8px;
+  padding: 6px 16px;
+  border: 1px solid;
+  text-align: left;
+  font: normal normal normal 16px/21px Roboto Mono;
+  letter-spacing: 0px;
+  color: #1b3849;
+  opacity: 1;
+  cursor: pointer;
+}
